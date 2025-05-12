@@ -1,0 +1,16 @@
+moonshot-prime-engine/
+    ├── moonshot_prime/
+    │   ├── __init__.py
+    │   └── engine.py
+    ├── examples/
+    │   └── basic_usage.py
+    │   └── (Optional: prime_gui.py)
+    ├── tests/ (Optional but recommended)
+    │   └── (Add some basic unit tests if possible)
+    ├── .gitignore
+    ├── LICENSE
+    ├── README.md
+    ├── requirements.txt
+    ├── setup.py
+    └── (Optional: CONTRIBUTING.md)
+    └── (Optional: CODE_OF_CONDUCT.md)

@@ -1,0 +1,44 @@
+.gitignore: Crucial! Create a .gitignore file (GitHub has good Python templates) to exclude __pycache__, virtual environment folders (like venv or .venv), build artifacts (dist/, build/, *.egg-info), IDE configuration files, etc. This keeps the repository clean.
+README.md: This is your project's front door. You've got a great start. Ensure it clearly states:
+What the project is (low-resource, ultra-large prime detector).
+What makes it unique (geometric approach, scale-invariant performance).
+The target audience (RPi users, researchers, etc.).
+Clear installation instructions (including the libgmp-dev etc. prerequisites).
+Simple, copy-paste usage examples.
+A clear link to the LICENSE.
+How to get help or contribute.
+LICENSE: Ensure the LICENSE file you created is present in the root. GitHub will automatically detect and display it.
+Examples Folder: Create an examples/ directory. Put a basic_usage.py script (like the one in your README) in there. You could even include the prime_gui.py script as a more visual example.
+Tests Folder (Optional but Recommended): For a public project, having tests inspires confidence. Even if you don't include the full LongSoak suite, consider adding some basic unit tests for key functions or adapting parts of your benchmark scripts.
+CONTRIBUTING.md (Optional): If you want others to contribute, add a file explaining how (e.g., bug report template, pull request process).
+CODE_OF_CONDUCT.md (Optional): Helps foster a positive community. GitHub provides templates.
+2. Labeling as Experimental (Versioning):
+Semantic Versioning (SemVer): The standard practice is MAJOR.MINOR.PATCH (e.g., 1.2.3).
+Version 0.x.y: The convention for initial, unstable, or experimental releases is to use 0.x.y. Your current 0.1.0 in __init__.py and setup.py is perfect for indicating this early stage.
+Version 0.9.0: If you feel it's quite stable but perhaps missing a few features or needing wider testing before a 1.0.0, you could use 0.9.0. But 0.1.0 clearly signals "initial development release."
+Communicate Clearly:
+README: Explicitly state in the README that this is an experimental engine, results are probabilistic (unless Miller-Rabin fallback is hit), and the API might change in future 0.x versions.
+GitHub Release: When you tag a release on GitHub (highly recommended!), use the version number (e.g., v0.1.0) and add release notes mentioning its experimental nature and key features/limitations.
+Status Badges (Optional): You can add badges to your README indicating build status, test coverage, or development stage (e.g., via shields.io).
+3. Gaining Exposure and Popularity:
+This requires reaching the right audiences: Raspberry Pi enthusiasts, Python developers, people interested in number theory or cryptography.
+Targeted Communities:
+Raspberry Pi Forums: Post on the official Raspberry Pi forums, relevant subreddits (like r/raspberry_pi, r/RASPBERRY_PI_PROJECTS). Focus on the low-resource angle.
+Python Communities: Share on r/Python, potentially Python-specific forums. Highlight the unique algorithm and performance characteristics.
+Hacker News / Lobste.rs: Consider a "Show HN" or similar post. Frame it around the novelty and the problem it solves for large number primality testing.
+Stack Overflow: If you see relevant questions where your tool is a genuinely good fit as part of a helpful answer, you could mention it (but avoid spamming).
+Academic/Math Communities: If appropriate, perhaps forums related to computational number theory or relevant arXiv sections (with a suitable write-up).
+Clear Messaging: When posting, emphasize:
+The Problem: Primality testing for huge numbers is slow/resource-intensive.
+The Solution: Moonshot Engine offers a novel, efficient approach.
+The Benefit (especially for Pi): Run these tests on low-power devices.
+Show, Don't Just Tell: Include the benchmark comparisons (especially the flat performance curve!) and simple code examples.
+Make it Easy to Use:
+PyPI: Strongly consider uploading your package to the Python Package Index (PyPI). This allows users to install with just pip install moonshot_prime instead of cloning the repo. You'll need to register an account and use tools like twine. The setup.py is already configured for this.
+Good Documentation: The README is key. Ensure the installation and usage are foolproof.
+GitHub Presence:
+Topics: Add relevant topics to your GitHub repository (e.g., python, raspberry-pi, primality-test, number-theory, cryptography, large-integers, numba, gmpy2). This improves discoverability on GitHub.
+Engage: Respond promptly to issues and pull requests. Be open to feedback.
+Content:
+Blog Post: Write a blog post (on Medium, dev.to, or your own site) explaining the project, the journey, the challenges, and the results. Link to the GitHub repo.
+Building popularity takes time and consistent effort. Focus on clearly communicating the unique value proposition, especially for the Raspberry Pi niche, and making it as easy as possible for people to install and try it out. Good luck!

@@ -1,0 +1,3 @@
+Create package for Raspberry PI use.
+
+License: We need a custom license that allows free use as long as it is not commercial use. For commercial use, they have to contact us at AetheCoreContact@gamil.com to work out the details. Out patent pending is 63/802,543
