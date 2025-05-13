@@ -56,7 +56,7 @@ We've aimed to make installation simple.
 
 Here's a basic example of how to use the engine in your Python scripts:
 
-```python
+````python
 from moonshot_prime import MoonshotPrimeEngine_UltraScale_Extreme
 
 # Initialize the engine (this might take a few seconds the first time)
@@ -104,7 +104,27 @@ try:
 except Exception as e:
     print(f"Error finding next prime: {e}")
 
-```
+## GUI Example
+
+This project includes a self-contained graphical user interface (GUI) example in the `examples/GUI_Original` directory. It demonstrates the usage of the prime engine visually.
+
+To run the GUI:
+
+1.  **Navigate to the GUI directory:**
+    ```bash
+    cd examples/GUI_Original
+    ```
+2.  **Install GUI-specific dependencies:**
+    The GUI has its own set of requirements. Install them using:
+    ```bash
+    pip install -r requirements.txt
+    ```
+3.  **Run the GUI:**
+    ```bash
+    python prime_gui.py
+    ```
+
+Note: This GUI example uses a copy of the engine code (`MoonshotPrimeEngine_UltraScale_Extreme.py`) for simplicity and may not reflect the absolute latest changes in the main library.
 
 ## License
 
@@ -118,3 +138,4 @@ Please see the `LICENSE` file for full details. (Patent Pending: US 63/802,543)
 ## Contributing & Feedback
 
 This is an experimental engine. Feedback, bug reports, and contributions are welcome! Please contact `AetheCoreContact@gamil.com`.
+````
