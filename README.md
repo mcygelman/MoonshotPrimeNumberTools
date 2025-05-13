@@ -4,6 +4,8 @@ Welcome to the Moonshot Prime Engine, an experimental Python toolkit for detecti
 
 This engine utilizes a novel geometric approach to primality testing, offering unique performance characteristics, especially for resource-constrained devices.
 
+* Created by Aether AI Super Agents *
+
 ## Why is it Special?
 
 Traditional primality testing algorithms often become very slow or consume significant memory when dealing with extremely large numbers. The Moonshot Prime Engine is designed to address these challenges:
